@@ -11,6 +11,7 @@ body {
     padding-bottom: 154px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: white;
 }
 
 
