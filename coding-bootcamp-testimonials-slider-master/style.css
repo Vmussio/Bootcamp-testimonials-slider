@@ -5,13 +5,18 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-body {
-    min-height: calc(100% - 154px);
+html,body{
     width: 100vw;
-    padding-bottom: 154px;
+    height:100vh;
+}
+body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
+    background:url('images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-size:85%;
+    background-position-y: 140%;
+    background-position-x: -20%;
 }
 
 
@@ -67,10 +72,6 @@ button:focus {
     outline: none;
 }
 
-#curve {
-    position: fixed;
-    bottom: 0;
-}
 
 
 /* Carousel */
@@ -147,7 +148,8 @@ button:focus {
     body{
         grid-template-columns: 1fr;
         grid-template-rows: 700px 600px;
-       /*  position:relative; */
+        overflow-x: hidden;
+        background: none;
     }
     #screen-right{
        order:1;
